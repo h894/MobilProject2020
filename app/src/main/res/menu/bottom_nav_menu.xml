@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/starPlay"
+        android:icon="@drawable/ic_play_arrow_24px"
+        android:title="Play"/>
+
+    <item
+        android:id="@+id/set_tap"
+        android:icon="@drawable/ic_build_24px"
+        android:title="Settings"/>
+
+    <item
+        android:id="@+id/stat_tap"
+        android:icon="@drawable/ic_menu_24px"
+        android:title="Stats"
+        />
+
+</menu>

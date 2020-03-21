@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/weatherSetTop"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Weather Settings"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/select_forecast_time"
+        android:layout_width="395dp"
+        android:layout_height="32dp"
+        android:text="Show warnings for the next..." />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="328dp"
+        android:layout_height="36dp" />
+
+    <TextView
+        android:id="@+id/windWarn"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:text="Warn if wind speed is over..." />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="328dp"
+        android:layout_height="36dp" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Show if rain is coming." />
+
+</LinearLayout>
