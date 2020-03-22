@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <TextView
+        android:id="@+id/weatherSetTop"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Weather Settings"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/select_forecast_time"
+        android:layout_width="395dp"
+        android:layout_height="32dp"
+        android:text="Show warnings for the next..."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weatherSetTop"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="328dp"
+        android:layout_height="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_forecast_time"/>
+
+    <TextView
+        android:id="@+id/windWarn"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:text="Warn if wind speed is over..."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"/>
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="328dp"
+        android:layout_height="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/windWarn"/>
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Show if rain is coming."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar2"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bot_nav_set"
+        android:layout_width="409dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,9 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/starPlay"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_24px"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/start"
         android:icon="@drawable/ic_play_arrow_24px"
-        android:title="Play"/>
+        android:title="Start"/>
 
     <item
         android:id="@+id/set_tap"
