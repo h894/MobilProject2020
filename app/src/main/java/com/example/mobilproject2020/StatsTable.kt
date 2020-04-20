@@ -1,5 +1,6 @@
 package com.example.mobilproject2020
 
+import androidx.lifecycle.LiveData
 import androidx.room.*
 
 @Entity(tableName = "statistics")
@@ -18,5 +19,5 @@ interface StatsDao{
     fun insert(statistics: Statistics)
 
     @Query("SELECT * FROM statistics")
-    fun getReminders(): List<Statistics>
+    fun getStats(): LiveData<List<Statistics>>
 }
